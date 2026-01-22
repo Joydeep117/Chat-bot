@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Relationship Advisor - Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-header">
+            <div class="header-content">
+                <div class="avatar">💬</div>
+                <div class="header-info">
+                    <h1>AI Relationship Advisor</h1>
+                    <p class="status">Online • Ready to help</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-container" id="chatContainer">
+            <div class="message bot-message">
+                <div class="message-avatar">🤖</div>
+                <div class="message-content">
+                    <p>Hello! I'm your AI Relationship Advisor. I'm here to help you navigate through various relationship challenges - whether it's with friends, family, romantic partners, or colleagues.</p>
+                    <p>What would you like to discuss today?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-actions" id="quickActions">
+            <button class="quick-btn" data-topic="friendship">👥 Friendship</button>
+            <button class="quick-btn" data-topic="family">👨‍👩‍👧‍👦 Family</button>
+            <button class="quick-btn" data-topic="romantic">💕 Romantic</button>
+            <button class="quick-btn" data-topic="work">💼 Work/Colleagues</button>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Type your message here..." autocomplete="off">
+            <button id="sendBtn" class="send-btn">
+                <span>Send</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
